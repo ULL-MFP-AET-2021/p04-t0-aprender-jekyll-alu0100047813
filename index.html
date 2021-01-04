@@ -26,13 +26,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     {%- if tema.visible %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ tema.url }}">{{ tema.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}/{{ tema.url }}">{{ tema.title }}</a></h1>
       
       <div class="entry">
         {{ tema.excerpt | slice: 0, 20 | append: '...' }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ tema.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}/{{ tema.url }}" class="read-more">Read More</a>
     </article>
     {%- endif %}
   {% endfor %}
@@ -43,13 +43,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     {%- if tarea.visible %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ tarea.url }}">{{ tarea.title }} ({{ tarea.date | slice: 0, 10 }})</a></h1>
+      <h1><a href="{{ site.baseurl }}/{{ tarea.url }}">{{ tarea.title }} ({{ tarea.date | slice: 0, 10 }})</a></h1>
       
       <div class="entry">
         {{ tarea.name | markdownify | slice: 0, 20 | append: '...' }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ tarea.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}/{{ tarea.url }}" class="read-more">Read More</a>
     </article>
     {%- endif %}
   {% endfor %}
