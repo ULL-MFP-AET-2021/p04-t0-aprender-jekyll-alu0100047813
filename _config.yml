@@ -87,10 +87,6 @@ exclude:
 
 #Collections definidas:
 collections:
-  - tareas
-  - temas
-
-collections:
   tareas:
     output: true
     sort_by: my_order

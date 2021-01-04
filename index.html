@@ -29,7 +29,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
       <h1><a href="{{ site.baseurl }}{{ tema.url }}">{{ tema.title }}</a></h1>
       
       <div class="entry">
-        {{ tema.content | markdownify | slice: 0, 20 | append: '...' }}
+        {{ tema.excerpt | slice: 0, 20 | append: '...' }}
       </div>
 
       <a href="{{ site.baseurl }}{{ tema.url }}" class="read-more">Read More</a>
